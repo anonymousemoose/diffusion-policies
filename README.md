@@ -33,7 +33,8 @@ We qualitatively describe the results here.
 - Vanilla PG (Alg. 1) proves surprisingly competitive, especially with reduced learning rates—one order of magnitude lower than PPO on Gym and two orders lower on Robomimic. This aligns well with our theory in Section 3 that suggests similar rates for Algorithms 1 and 2.
 - Algorithm 3 outperforms DIPO except on Hopper-v2, validating our modifications (Lines 254-261) that address inconsistency in DIPO.
 - Environment type strongly influences regret: behavior cloning algorithms achieve sublinear regret in Hopper-v2, whereas policy gradient methods do so in Walker2D-v2.
-- We provide tables below of results. Results, presented below, report cumulative normalized regret: $\sum_{i=1}^t \frac{V^* - V^{(i)}}{V^*}$, ensuring interpretability:
+- We provide tables below of results. Results, presented below, report cumulative normalized regret: $\sum_{i=1}^t \frac{V^* - V^{(i)}}{V^*}$, ensuring interpretability.
+- 
 | Regret | Vanilla PG (Alg. 1) | DPPO+DDIM (Alg. 2) | Modified DIPO (Alg. 3) | DPPO | DIPO | Gaussian PPO | Number of Rounds
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |  :--- |
 | Hopper-v2  | 94 | 79 | 102 | 78 | 97 | -  | 300 |
