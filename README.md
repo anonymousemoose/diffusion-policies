@@ -96,6 +96,8 @@ python script/run.py --config-name=ft_dipo_diffusion_mlp \
 
 before running ``notebooks/analysis.ipynb``.
 
+# Instructions from Ren et al. (2024)
+
 ## Installation 
 
 1. Clone the repository
@@ -156,7 +158,7 @@ python script/run.py --config-name=pre_diffusion_mlp \
     --config-dir=cfg/furniture/pretrain/one_leg_low
 ```
 
-See [here](cfg/pretraining.md) for details of the experiments in the paper.
+See [here](cfg/pretraining.md) for details of the DPPO experiments.
 
 ## Usage - Fine-tuning
 
@@ -172,7 +174,7 @@ export DPPO_LOG_DIR=<your_prefered_logging_directory>
 export DPPO_LOG_DIR=/path/to/checkpoint
 ``` -->
 
-Pre-trained policies used in the paper can be found [here](https://drive.google.com/drive/folders/1ZlFqmhxC4S8Xh1pzZ-fXYzS5-P8sfpiP?usp=drive_link). Fine-tuning script will download the default checkpoint automatically to the logging directory.
+Pre-trained policies used in the DPPO paper can be found [here](https://drive.google.com/drive/folders/1ZlFqmhxC4S8Xh1pzZ-fXYzS5-P8sfpiP?usp=drive_link). Fine-tuning script will download the default checkpoint automatically to the logging directory.
  <!-- or you may manually download other ones (different epochs) or use your own pre-trained policy if you like. -->
 
  <!-- e.g., `${DPPO_LOG_DIR}/gym-pretrain/hopper-medium-v2_pre_diffusion_mlp_ta4_td20/2024-08-26_22-31-03_42/checkpoint/state_0.pt`. -->
@@ -205,7 +207,7 @@ To fine-tune your own pre-trained policy instead, override `base_policy_path` to
 
 <!-- **Note**: If you did not download the pre-training [data](https://drive.google.com/drive/folders/1AXZvNQEKOrp0_jk1VLepKh_oHCg_9e3r?usp=drive_link), you need to download the normalization statistics from it for fine-tuning, e.g., `${DPPO_DATA_DIR}/furniture/round_table_low/normalization.pkl`. -->
 
-See [here](cfg/finetuning.md) for details of the experiments in the paper.
+See [here](cfg/finetuning.md) for details of the experiments in the DPPO paper.
 
 
 ### Visualization
