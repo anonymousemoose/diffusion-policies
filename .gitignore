@@ -2,7 +2,6 @@
 result/
 wandb/
 .vscode/
-data/
 log/
 logs/
 checkpoints/
@@ -11,6 +10,7 @@ out/
 err/
 *.pkl
 *.sh
+*.npz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
