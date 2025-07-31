@@ -2,7 +2,7 @@
 
 This repository governs the source code for the numerical experiments in the NeurIPS 2025 submission "Learning Diffusion Policies With Sublinear Regret". This was forked from Diffusion Policy Policy Optimization [(DPPO)](https://arxiv.org/abs/2409.00588) by Ren et al. (2024). 
 
-The two main figures can be found in ``imgs/regrets.png`` and ``imgs/rewards.png``. 
+The two main figures can be found in ``imgs/regret.png`` and ``imgs/reward.png``. 
 
 ### Results
 
@@ -20,10 +20,10 @@ We explore the regret that (practical versions of) our algorithms achieve {Hoppe
 | DIPO | 4.83 | 4.33 | 3/6 |
 
 ### Cumulative Regret
-![image](./imgs/regrets.png)
+![image](./imgs/regret.png)
 
 ### Per-Episode Reward
-![image](./imgs/rewards.png)
+![image](./imgs/reward.png)
 
 
 ## Writeup
